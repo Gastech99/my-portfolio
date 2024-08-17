@@ -35,7 +35,7 @@ a:hover{
 }
 
 .main-header{
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -448,4 +448,46 @@ main{
 
 .footer .nav a + a{
     margin-left: 18px;
+}
+
+.projects-box .projects-img{
+    position: relative;
+    border: 2px solid var(--dark-color);
+    box-shadow: 0 0 0 0 var(--dark-color);
+    transition: 0.3s;
+}
+
+.projects-box .projects-img:hover{
+    box-shadow: 5px 5px 0 0 var(--dark-color);
+}
+
+.projects-box .projects-text span{
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgba(255, 101, 28, 0.2);
+    color: var(--dark-color);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 30px;
+    margin-bottom: 18px;
+}
+
+.projects-box .projects-text h4{
+    color: var(--dark-color);
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .projects-box .projects-text h4{
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+}
+
+.projects-box .projects-text .colored-btn{
+    font-size: 12px;
 }
