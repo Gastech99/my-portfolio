@@ -491,3 +491,10 @@ main{
 .projects-box .projects-text .colored-btn{
     font-size: 12px;
 }
+
+footer .footer{
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
